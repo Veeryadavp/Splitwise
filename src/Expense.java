@@ -2,14 +2,14 @@ public abstract class Expense
 {
 private String expenseID;
 private User paidBy;
-private double amount;
+private double totalAmount;
 private Expensetype type;
 
-public Expense(String expenseID,User paidBy, double amount, Expensetype type)
+public Expense(String expenseID,User paidBy, double totalAmount, Expensetype type)
 {
     this.expenseID = expenseID;
     this.paidBy = paidBy;
-    this.amount = amount;
+    this.totalAmount = totalAmount;
     this.type = type;
 }
 public String getExpenseID()
@@ -20,9 +20,9 @@ public User getPaidBy()
 {
     return paidBy;
 }
-public double getAmount()
+public double getTotalAmount()
 {
-    return amount;
+    return totalAmount;
 }
 public Expensetype getType()
 {
