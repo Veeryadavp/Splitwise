@@ -34,7 +34,7 @@ public void setPaidBy(User paidBy)
 }
 public void setAmount(double amount)
 {
-    this.amount=amount;
+    this.totalAmount=amount;
 }
 public void setType(Expensetype type)
 {
